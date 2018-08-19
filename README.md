@@ -1,1 +1,1 @@
-# Snake Game
+# Snake Game ![snake-game](/favicon.png)
