@@ -1,6 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
 html, body {
     width: 100%;
     height: 100%;
     overflow: hidden; /*  Disable scrollbars */
     display: block;  /* No floating content on sides */
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: 1em;
+}
+
+#info {
+    width: 2em;
+    height: 2em;
+
+    line-height: 1.5;
+    display: inline-block;
+    vertical-align: middle;
+
+    margin: 0 2em 0 0;
+}
+
+#info-box {
+    visibility: hidden;
+    display: inline-block;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+}
+
+#info-box a {
+    color: white;
+    font-style: italic;
+}
+
+#info:hover + #info-box {
+    visibility: visible;
 }
