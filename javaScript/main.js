@@ -8,7 +8,7 @@ $(function(){
 });
 
 function initialize() {
-    window.addEventListener('resize', drawCanvas, false);
+    $(window).resize(drawCanvas);
     drawCanvas();
 }
 
@@ -17,6 +17,7 @@ function drawCanvas() {
     c.height = window.innerHeight;
 
     drawBackground();
+    homePage();
 }
 
 function drawBackground() {
@@ -27,3 +28,23 @@ function drawBackground() {
     ctx.fillStyle = grd;
     ctx.fillRect(0,0,window.innerWidth,window.innerHeight);
 }
+
+function homePage() {
+    ctx.font = "12em Roboto Mono";
+    ctx.fillStyle = "#00372B";
+    ctx.textAlign = "center";
+    ctx.fillText("SNAKE GAME", c.width / 2, c.height * 0.4, c.width * 0.8);
+}
+
+// function comandPage(params) {
+
+// }
+
+// function startGame(){
+
+// }
+
+// function keyPressed() {
+
+// }
+
