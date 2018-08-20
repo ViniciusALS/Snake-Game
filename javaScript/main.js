@@ -21,8 +21,8 @@ function drawCanvas() {
 
 function drawBackground() {
     var grd = ctx.createRadialGradient(c.width / 2, c.height / 2, c.width / 5, c.width / 2, c.height / 2, c.width / 1.1);
-    grd.addColorStop(0, "#001433");
-    grd.addColorStop(1, "#425979");
+    grd.addColorStop(0, "#44897A");
+    grd.addColorStop(1, "#00372B");
 
     ctx.fillStyle = grd;
     ctx.fillRect(0,0,window.innerWidth,window.innerHeight);
