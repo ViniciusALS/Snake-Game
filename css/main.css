@@ -40,3 +40,8 @@ footer {
 #info:hover + #info-box {
     visibility: visible;
 }
+
+html, body {
+    margin: 0;
+    padding: 0;
+  }
